@@ -41,6 +41,15 @@
             currentCur = '<%=user.currency%>';
         </script>
         <%
+            } 
+            else
+            {
+        %>
+        <script>
+            rate = parseFloat(1);
+            currentCur = 'USD';
+        </script>
+        <%
             }
         %>
         <div class='container-fluid'>
