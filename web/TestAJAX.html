@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script>
+            function getInfo()
+            {
+                var url = "FetchItems";
+                var request = new XMLHttpRequest();
+		
+		request.onreadystatechange = function() {
+                                            console.log(request.readyState);
+                                            console.log(request.status);
+                                            if (request.readyState === 4) {
+						var val = request.responseText;
+						document.getElementById('fetchData').innerHTML = val;
+						}
+					};
+		request.open("GET", url, true);
+		request.send();
+            }
+        </script>
+    </head>
+    <body>
+       <form >
+		<input type="button" value="FetchData" onClick="getInfo()">
+	</form>
+
+	<div id="fetchData"> </div>
+    </body>
+</html>

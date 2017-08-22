@@ -1,0 +1,26 @@
+body {
+	padding: 0 0 0 0;
+}
+
+.header
+{
+	padding: 10px 10px 10px 10px;
+	background-color: #1A75CF;
+}
+h1
+{
+	color: #FFFFFF;
+}
+a{
+	
+}
+ul li{
+	display: inline;
+	color: #ffffff;
+}
+
+.sponsor
+{
+	background-color: #F2F8FD;
+}
+
