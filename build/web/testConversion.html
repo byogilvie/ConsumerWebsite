@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='dist/css/bootstrap.css' rel='stylesheet'>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script src='dist/js/bootstrap.js'></script>
+        <script src="Walmartjs.js"></script>
+    </head>
+    <body>
+
+	<form>
+		<div class="span2">
+			<label>Base Currency</label> <input id="bc" class="input-small"
+				type="text">
+		</div>
+
+		<div class="span2">
+			<label>Target Currency</label> <input id="tc" class="input-small"
+				type="text">
+		</div>
+
+		<input type="button" value="Get Rate" onClick="getConversionRate()">
+	</form>
+
+	<div id="rate"></div>
+
+	
+</body>
+</html>
